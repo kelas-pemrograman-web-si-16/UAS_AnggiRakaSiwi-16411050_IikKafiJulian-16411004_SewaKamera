@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kamera_form">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/background_rounded"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSYARATAN"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Booking ketersediaan alat melalui Phone 085838661363, Watshapp 082113535921
+2. Prosedur booking minimal DP 50% dari biaya sewa, dan pelunasan setelah penyerahan alat
+3. Menyiapkan 2 identitas diri asli (bkan foto copy) sebagai jaminan dengan nama dan alamat yang sama
+   KTP (Kartu Tanda Penduduk)
+   SIM (Surat Izin Mengemudi)
+   Kartu Keluarga
+   STNK (Surat Tanda Nomor kendaraan)
+   BPKB
+   Ijazah
+4. Melengkapi data diri untuk database PusatSewa.com
+5. Bagi yang berdomisili di luar area bandar lampung dapat diwakili oleh keluarga,saudara,teman yang berdomisili di bandar lampung dan tanggung jawab berada pada yang mewakili"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KELUAR"
+            android:textColor="#fff"
+            android:background="@drawable/bk_rounded_button"
+            android:id="@+id/btnRegis"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

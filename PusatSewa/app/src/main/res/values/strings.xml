@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PusatSewa</string>
+    <string name="text_syarat">Booking ketersediaan alat melalui Phone 085838661363, Watshapp 082113535921
+Prosedur booking minimal DP 50% dari biaya sewa, dan pelunasan setelah penyerahan alat
+Menyiapkan 2 identitas diri asli (bkan foto copy) sebagai jaminan dengan nama dan alamat yang sama
+KTP (Kartu Tanda Penduduk)
+SIM (Surat Izin Mengemudi)
+Kartu Keluarga
+STNK (Surat Tanda Nomor kendaraan)
+BPKB
+Ijazah
+Melengkapi data diri untuk database PusatSewa.com
+Bagi yang berdomisili di luar area bandar lampung dapat diwakili oleh keluarga,saudara,teman yang berdomisili di bandar lampung dan tanggung jawab berada pada yang mewakili</string>
+</resources>

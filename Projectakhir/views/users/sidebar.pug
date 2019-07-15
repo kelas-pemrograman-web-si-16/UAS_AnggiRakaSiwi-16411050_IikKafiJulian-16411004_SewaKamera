@@ -1,0 +1,92 @@
+aside.main-sidebar
+    // sidebar: style can be found in sidebar.less
+    section.sidebar
+        // Sidebar user panel
+        .user-panel
+            .pull-left.image
+                img.img-circle(src='/adminlte/dist/img/anggi.png' alt='User Image')
+            .pull-left.info
+                p #{session_store.username}
+                a(href='#')
+                    i.fa.fa-circle.text-success
+                    |  Online
+        ul.sidebar-menu(data-widget='tree')
+            li.header Absensi
+                if(session_store.admin == true)
+                    li.treeview
+                        a(href='#')
+                            i.fa.fa-home
+                            span Home
+                            span.pull-right-container
+                                i.fa.fa-angle-left.pull-right
+                        ul.treeview-menu
+                            li
+                                a(href='/home')
+                                    i.fa.fa-circle-o
+                                    | Dashboard
+                            li
+                                a(href='/info')
+                                    i.fa.fa-circle-o
+                                    | Information
+                    li.treeview
+                        a(href='#')
+                            i.fa.fa-camera
+                            span Data Sewa
+                            span.pull-right-container
+                                i.fa.fa-angle-left.pull-right
+                        ul.treeview-menu
+                            li
+                                a(href='/inputkamera')
+                                    i.fa.fa-circle-o
+                                    |  Input Data Sewa
+                            li
+                                a(href='/datakamera')
+                                    i.fa.fa-circle-o
+                                    |  Lihat Data Sewa
+                else
+                    li.treeview
+                        a(href='#')
+                            i.fa.fa-home
+                            span Home
+                            span.pull-right-container
+                                i.fa.fa-angle-left.pull-right
+                        ul.treeview-menu
+                            li
+                                a(href='/home')
+                                    i.fa.fa-circle-o
+                                    | Dashboard
+                            li
+                                a(href='/info')
+                                    i.fa.fa-circle-o
+                                    | Information
+                    li.treeview
+                        a(href='#')
+                            i.fa.fa-user
+                            span My Account
+                            span.pull-right-container
+                                i.fa.fa-angle-left.pull-right
+                        ul.treeview-menu
+                            li
+                                a(href='/home')
+                                    i.fa.fa-circle-o
+                                    |  My Profile
+                            li
+                                a(href='/home')
+                                    i.fa.fa-circle-o
+                                    |  Edit My Profile
+                    li.treeview
+                        a(href='#')
+                            i.fa.fa-laptop
+                            span Booking
+                            span.pull-right-container
+                                i.fa.fa-angle-left.pull-right
+                        ul.treeview-menu
+                            li
+                                a(href='/inputpenyewaan')
+                                    i.fa.fa-circle-o
+                                    |  Sewa Barang
+                            li
+                                a(href='/datapenyewaan')
+                                    i.fa.fa-circle-o
+                                    |  Lihat Transaksi
+    // /.sidebar

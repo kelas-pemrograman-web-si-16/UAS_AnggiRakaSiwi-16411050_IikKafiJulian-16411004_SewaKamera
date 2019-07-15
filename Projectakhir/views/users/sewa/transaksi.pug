@@ -1,0 +1,66 @@
+include  ../../users/dashboard
+// Content Wrapper. Contains page content
+.content-wrapper
+    // Content Header (Page header)
+    section.content-header
+        h1
+            | Data Absen
+        ol.breadcrumb
+            li
+                a(href='#')
+                    i.fa.fa-dashboard
+                    |  Home
+            li
+                a(href='#') Tables
+            li.active Data tables
+    // Main content
+    section.content
+        .row
+            .col-xs-12
+                // /.box-body
+                // /.box
+                .box
+                    .box-body
+                        .box.box-info
+                            .box-header.with-border
+                                h3.box-title Input Data Absen
+                            // /.box-header
+                            // form start
+                            form.form-horizontal(method="post", action="/datatransaksi", role='form', enctype="multipart/form-data")
+                                .box-body
+                                    .form-group
+                                        img(src='http://localhost:8000/uploads/'+ sewakameras.foto, alt='', border='3', height='100', width='100')
+                                    .form-group
+                                        label.col-sm-2.control-label(for='idtransaksi') Id Transaksi
+                                        .col-sm-10
+                                            input#idtransaksi.form-control(type='text' required name="idtransaksi" placeholder='Id Transaksi' value= (idtransaksi == undefined) ? transaksis.idtransaksi : idtransaksi)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='jenisbarang') Jenis Barang
+                                        .col-sm-10
+                                            input#jenisbarang.form-control(type='text' name="jenisbarang" placeholder='Jenis Barang' value= (jenisbarang == undefined) ? sewakameras.jenisbarang : jenisbarang)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='merk') Merk
+                                        .col-sm-10
+                                            input#merk.form-control(type='text' name="merk" placeholder='Merk' value= (merk == undefined) ? sewakameras.merk : merk)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='tipe') Tipe
+                                        .col-sm-10
+                                            input#tipe.form-control(type='text' name="tipe" placeholder='Tipe' value= (tipe == undefined) ? sewakameras.tipe : tipe)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='harga') Harga
+                                        .col-sm-10
+                                            input#harga.form-control(type='text' name="harga" placeholder='Harga' value= (harga == undefined) ? sewakameras.harga : harga)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='tanggalpinjam') Tanggal Pinjam
+                                        .col-sm-10
+                                            input#tanggalpinjam.form-control(type='date' required name="tanggalpinjam" placeholder='Tanggal Pinjam' value= (tanggalpinjam == undefined) ? transaksis.tanggalpinjam : tanggalpinjam)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='tanggalkembali') Tanggal Kembali
+                                        .col-sm-10
+                                            input#tanggalkembali.form-control(type='date' required name="tanggalkembali" placeholder='tanggalkembali' value= (tanggalkembali == undefined) ? transaksis.tanggalkembali : tanggalkembali)
+                                    .form-group
+                                        label.col-sm-2.control-label(for='totalharga') Total Harga
+                                        .col-sm-10
+                                            input#totalharga.form-control(type='date' required name="totalharga" placeholder='totalharga' value= (totalharga == undefined) ? transaksis.totalharga : totalharga)
+                                // /.box-body
+
